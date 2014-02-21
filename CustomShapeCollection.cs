@@ -9,7 +9,6 @@ using System.Drawing;
 
 namespace WebcamEffect
 {
-    //class B { }
     class CustomShapeCollection : IList<CustomShape>
     {
         private readonly IList<CustomShape> _list = new List<CustomShape>();
