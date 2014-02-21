@@ -1,0 +1,10 @@
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\Web.exe
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\Web.pdb
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web.Form1.resources
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web.Properties.Resources.resources
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web Cam.csproj.GenerateResource.Cache
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web.exe
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web.pdb
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web Cam.csprojResolveAssemblyReference.cache
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\WebCam_Capture.dll
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\Web.Form2.resources

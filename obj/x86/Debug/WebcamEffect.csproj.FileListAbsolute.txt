@@ -1,0 +1,27 @@
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\WebcamEffect.exe
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\WebcamEffect.pdb
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\bin\Debug\WebCam_Capture.dll
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.Form1.resources
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.Form2.resources
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.Properties.Resources.resources
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.csproj.GenerateResource.Cache
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.exe
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.pdb
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web\obj\x86\Debug\WebcamEffect.csprojResolveAssemblyReference.cache
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web - Copy\obj\x86\Debug\WebcamEffect.exe
+E:\TRUNGKIEN\MANGUON\My Projects\Webcam\Web - Copy\obj\x86\Debug\WebcamEffect.pdb
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.exe
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.pdb
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.exe.config
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.csprojResolveAssemblyReference.cache
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.Form1.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.Form2.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.Properties.Resources.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\x86\Debug\WebcamEffect.csproj.GenerateResource.Cache
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.exe
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.pdb
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\Accord.Imaging.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\Accord.Vision.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\AForge.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\AForge.Imaging.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebCam_Capture.dll

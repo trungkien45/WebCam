@@ -1,0 +1,15 @@
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.exe.config
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.exe
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebcamEffect.pdb
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\Accord.Imaging.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\Accord.Vision.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\AForge.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\AForge.Imaging.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\bin\Debug\WebCam_Capture.dll
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.csprojResolveAssemblyReference.cache
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.Form1.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.Form2.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.Properties.Resources.resources
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.csproj.GenerateResource.Cache
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.exe
+C:\Users\w7\Documents\Visual Studio 2010\Projects\Web - Copy\obj\Debug\WebcamEffect.pdb
