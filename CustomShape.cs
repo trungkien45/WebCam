@@ -33,7 +33,7 @@ namespace WebcamEffect
             }
         }
         private Point _location;
-        public Cursor cursor { get; set; }
+        //public Cursor cursor { get; set; }
         private Size _size;
         Rectangle rect;
         public Size SizeThis
@@ -235,7 +235,7 @@ namespace WebcamEffect
             tl = tr = bl = br = false;
             //if(e.X)
             //Clicked = false;
-            cursor = Cursors.Default;
+            //cursor = Cursors.Default;
             CDragDrop = false;
             tl = tr = bl = br = false;
         }

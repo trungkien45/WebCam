@@ -17,13 +17,14 @@ namespace WebcamEffect
         private System.Windows.Forms.ToolStripMenuItem deleleToolStripMenuItem;
 
         //CustomShape currentShape;
-        public CustomShapeCollection(){
+        public CustomShapeCollection()
+        {
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.flipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rotate90ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             //this.contextMenuStrip1.SuspendLayout();
-            
+
 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.flipToolStripMenuItem,
@@ -53,7 +54,7 @@ namespace WebcamEffect
             this.deleleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleleToolStripMenuItem.Text = "Delele";
             this.deleleToolStripMenuItem.Click += new System.EventHandler(this.deleleToolStripMenuItem_Click);
-            
+
         }
         private readonly IList<CustomShape> _list = new List<CustomShape>();
         public int IndexOf(CustomShape item)
@@ -138,16 +139,17 @@ namespace WebcamEffect
             return GetEnumerator();
             ////throw new NotImplementedException();
         }
-        public void Draw(System.Drawing.Graphics g) 
-        { 
+        public void Draw(System.Drawing.Graphics g)
+        {
             foreach (CustomShape e in _list)
             {
                 e.Draw(g);
             }
         }
-        
+
         CustomShape shnape;
-        public void MouseDown(object sender, MouseEventArgs e) {
+        public void MouseDown(object sender, MouseEventArgs e)
+        {
             PictureBox pictureBox1 = (PictureBox)sender;
             this.Draw(Graphics.FromImage(pictureBox1.Image));
             MouseButtons s = e.Button;
@@ -162,7 +164,7 @@ namespace WebcamEffect
                         contextMenuStrip1.Show(Cursor.Position);
                         break;
                     }
-                    
+
                 }
                 //this.Remove(shnape);
                 //this.Cursor = Cursors.Default;
@@ -184,7 +186,8 @@ namespace WebcamEffect
             if (shnape != null)
                 shnape.MouseDown(sender, e);
         }
-        public void MouseMove(object sender, MouseEventArgs e) {
+        public void MouseMove(object sender, MouseEventArgs e)
+        {
             Point MouseLocation = e.Location;
             PictureBox pictureBox1 = (PictureBox)sender;
             //userControl11.p
@@ -211,7 +214,7 @@ namespace WebcamEffect
                     shnape.MouseUp(sender, e);
             }
             this.Draw(Graphics.FromImage(pictureBox1.Image));
-        
+
         }
         private void flipToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -230,7 +233,7 @@ namespace WebcamEffect
         public void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
-                if(shnape!=null&&shnape.Clicked)
+                if (shnape != null && shnape.Clicked)
                     Remove(shnape);
         }
     }

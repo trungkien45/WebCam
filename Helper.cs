@@ -22,7 +22,7 @@ namespace Webcam
 
             // Show save file dialog box
             // Process save file dialog box results
-            if (s.ShowDialog()==DialogResult.OK)
+            if (s.ShowDialog() == DialogResult.OK)
             {
                 // Save Image
                 string filename = s.FileName;

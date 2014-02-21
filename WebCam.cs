@@ -22,10 +22,10 @@ namespace Webcam
             webcam.TimeToCapture_milliseconds = FrameNumber;
             webcam.ImageCaptured += new WebCamCapture.WebCamEventHandler(((Form1)Application.OpenForms[0]).webcam_ImageCaptured);
             _FrameImage = ImageControl;
-            
+
         }
 
-        
+
         public void Start()
         {
             //Stoped = false;
