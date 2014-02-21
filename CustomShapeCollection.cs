@@ -11,6 +11,50 @@ namespace WebcamEffect
 {
     class CustomShapeCollection : IList<CustomShape>
     {
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem flipToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rotate90ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleleToolStripMenuItem;
+
+        //CustomShape currentShape;
+        public CustomShapeCollection(){
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.flipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotate90ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.contextMenuStrip1.SuspendLayout();
+            
+
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.flipToolStripMenuItem,
+            this.rotate90ToolStripMenuItem,
+            this.deleleToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            // 
+            // flipToolStripMenuItem
+            // 
+            this.flipToolStripMenuItem.Name = "flipToolStripMenuItem";
+            this.flipToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.flipToolStripMenuItem.Text = "Flip Horizontal";
+            this.flipToolStripMenuItem.Click += new System.EventHandler(this.flipToolStripMenuItem_Click);
+            // 
+            // rotate90ToolStripMenuItem
+            // 
+            this.rotate90ToolStripMenuItem.Name = "rotate90ToolStripMenuItem";
+            this.rotate90ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rotate90ToolStripMenuItem.Text = "Rotate 90";
+            this.rotate90ToolStripMenuItem.Click += new System.EventHandler(this.rotate90ToolStripMenuItem_Click);
+            // 
+            // deleleToolStripMenuItem
+            // 
+            this.deleleToolStripMenuItem.Name = "deleleToolStripMenuItem";
+            this.deleleToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+            this.deleleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleleToolStripMenuItem.Text = "Delele";
+            this.deleleToolStripMenuItem.Click += new System.EventHandler(this.deleleToolStripMenuItem_Click);
+            
+        }
         private readonly IList<CustomShape> _list = new List<CustomShape>();
         public int IndexOf(CustomShape item)
         {
@@ -101,6 +145,7 @@ namespace WebcamEffect
                 e.Draw(g);
             }
         }
+        
         CustomShape shnape;
         public void MouseDown(object sender, MouseEventArgs e) {
             PictureBox pictureBox1 = (PictureBox)sender;
@@ -113,11 +158,15 @@ namespace WebcamEffect
                 {
                     shnape = this[i];
                     if (shnape.Contain(pictureBox1, MouseLocation))
+                    {
+                        contextMenuStrip1.Show(Cursor.Position);
                         break;
+                    }
+                    
                 }
-                this.Remove(shnape);
+                //this.Remove(shnape);
                 //this.Cursor = Cursors.Default;
-                shnape = null;
+                //shnape = null;
             }
             for (int i = this.Count - 1; i >= 0; i--)
             {
@@ -163,6 +212,26 @@ namespace WebcamEffect
             }
             this.Draw(Graphics.FromImage(pictureBox1.Image));
         
+        }
+        private void flipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shnape.Flip();
+        }
+
+        private void rotate90ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shnape.Rotate();
+        }
+
+        private void deleleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Remove(shnape);
+        }
+        public void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+                if(shnape!=null&&shnape.Clicked)
+                    Remove(shnape);
         }
     }
 }

@@ -25,11 +25,13 @@ namespace WebcamEffect
         Bitmap _BackgroundImage;
         public Bitmap BackgroundImage
         {
-            get { return _BackgroundImage; } 
-            set{
-            //SizeThis = new Size(value.Width,value.Height);
-            _BackgroundImage=value;
-        } }
+            get { return _BackgroundImage; }
+            set
+            {
+                //SizeThis = new Size(value.Width, value.Height);
+                _BackgroundImage = value;
+            }
+        }
         private Point _location;
         public Cursor cursor { get; set; }
         private Size _size;
@@ -109,7 +111,7 @@ namespace WebcamEffect
             TopRight = new Pivot();
             BottomLeft = new Pivot();
             BottomRight = new Pivot();
-            
+
             this.BackgroundImage = shnape.BackgroundImage;
             this.SizeThis = shnape.SizeThis;
             this.Location = shnape.Location;
@@ -147,7 +149,8 @@ namespace WebcamEffect
                 dy = MouseLocate.Y - Location.Y;
             }
         }
-        public bool Contain(PictureBox x, Point MouseLocation){
+        public bool Contain(PictureBox x, Point MouseLocation)
+        {
             return rect.Contains(PictureBoxUtility.TranslatePointToImageCoordinates(x, MouseLocation))
                 || TopLeft.pivot.Contains(PictureBoxUtility.TranslatePointToImageCoordinates(x, MouseLocation))
                 || TopRight.pivot.Contains(PictureBoxUtility.TranslatePointToImageCoordinates(x, MouseLocation))
@@ -229,12 +232,25 @@ namespace WebcamEffect
         }
         public void MouseUp(object sender, MouseEventArgs e)
         {
-            tl =  tr = bl = br = false;
+            tl = tr = bl = br = false;
             //if(e.X)
             //Clicked = false;
             cursor = Cursors.Default;
             CDragDrop = false;
             tl = tr = bl = br = false;
+        }
+        public void Flip()
+        {
+            Bitmap img = new Bitmap(BackgroundImage);
+            img.RotateFlip(RotateFlipType.Rotate180FlipY);
+            BackgroundImage = img;
+        }
+        public void Rotate()
+        {
+            SizeThis = new Size(SizeThis.Height, SizeThis.Width);
+            Bitmap img = new Bitmap(BackgroundImage);
+            img.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            BackgroundImage = img;
         }
     }
 }

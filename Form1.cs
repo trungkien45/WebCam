@@ -240,5 +240,10 @@ namespace WebcamEffect
         {
             Shapes.MouseUp(sender, e);
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            Shapes.Form1_KeyDown(sender, e);
+        }
     }
 }
