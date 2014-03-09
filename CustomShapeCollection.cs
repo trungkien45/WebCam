@@ -200,7 +200,8 @@ namespace WebcamEffect
             }
             if (shnape != null)
                 shnape.MouseMove(sender, e);
-            this.Draw(Graphics.FromImage(pictureBox1.Image));
+            if(pictureBox1.Image!=null)
+                this.Draw(Graphics.FromImage(pictureBox1.Image));
         }
         public void MouseUp(object sender, MouseEventArgs e)
         {

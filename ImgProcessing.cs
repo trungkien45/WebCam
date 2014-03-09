@@ -81,7 +81,7 @@ namespace Webcam
                 for (int j = 0; j < h; j++)
                 {
                     Color x = lb2.GetPixel(i, j);
-                    if (x.A != 0x00 || x.B != 0x00 || x.G != 0x00 || x.R != 0x00)
+                    if (x.A != 0x00 )
                     {
                         c.SetPixel(i, j, lb2.GetPixel(i, j));
                     }
